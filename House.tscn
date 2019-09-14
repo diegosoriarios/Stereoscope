@@ -13,7 +13,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.52113, 11.3716 )
 [node name="Furniture" type="Node" parent="."]
 
 [node name="Couch" type="MeshInstance" parent="Furniture"]
-transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, -24.3273 )
+transform = Transform( 6, 0, 0, 0, 6, 0, 0, 0, 6, -15.5655, 0, -24.3273 )
 mesh = ExtResource( 2 )
 material/0 = null
 material/1 = null
@@ -34,13 +34,20 @@ material/11 = null
 transform = Transform( 5, 0, 0, 0, 0.1, 0, 0, 0, 2.5, 4.26576, 11.6813, 1.95372 )
 
 [node name="First_Floor" parent="Walls" instance=ExtResource( 3 )]
-transform = Transform( 5, 0, 0, 0, 0.1, 0, 0, 0, 5, 0, 0, 0 )
+transform = Transform( 6.43943, 0, 0, 0, 0.106684, 0, 0, 0, 5.33422, 6.20539, 0, -6.04654 )
+
+[node name="Ceilling" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 6.43943, 0, 0, 0, 0.106684, 0, 0, 0, 5.33422, 0, 24.0742, 0 )
+visible = false
 
 [node name="Stairs_Floor" parent="Walls" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 0.1, 0, 0, 0, 1, 30.7459, 7.83113, -24.8124 )
 
 [node name="Wall" parent="Walls" instance=ExtResource( 3 )]
-transform = Transform( 3.80665, 0, 0, 0, -2.18557e-08, -3, 0, 0.5, -1.31134e-07, 15.6995, 0, -27.1117 )
+transform = Transform( 5.74249, 0, 0, 0, -2.18557e-08, -3, 0, 0.5, -1.31134e-07, 0.54971, 5.79411, -27.1117 )
+
+[node name="Wall10" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 5.74249, 0, 0, 0, -2.18557e-08, -3, 0, 0.5, -1.31134e-07, 0.54971, 5.56781, 17.1121 )
 
 [node name="Wall2" parent="Walls" instance=ExtResource( 3 )]
 transform = Transform( 2.45207, 0, 0, 0, -2.18557e-08, -3, 0, 0.5, -1.31134e-07, -13.8536, -6.16884, -12.501 )
@@ -55,7 +62,40 @@ transform = Transform( 0.857032, 0, 0, 0, -2.18557e-08, -3, 0, 0.5, -1.31134e-07
 transform = Transform( 3.25, 0, 0, 0, -2.18557e-08, -0.25, 0, 0.5, -1.09278e-08, 9.804, 10.0437, -12.5011 )
 
 [node name="Wall4" parent="Walls" instance=ExtResource( 3 )]
-transform = Transform( 5, 0, 0, 0, -2.18557e-08, -1, 0, 0.5, -4.37114e-08, -3.82361, 17.7156, -12.5074 )
+transform = Transform( 5, 0, 0, 0, -8.38403e-09, -0.383609, 0, 0.5, -4.37114e-08, -3.74232, 13.9787, -12.6002 )
+
+[node name="Wall7" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 1.6344, 0, 0, 0, -2.18557e-08, -1, 0, 0.5, -4.37114e-08, 22.9368, 17.7033, -4.37791 )
+
+[node name="Wall9" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 2.5, 0, 0, 0, -2.18557e-08, -1, 0, 0.5, -4.37114e-08, -11.8978, 17.7156, -4.5015 )
+
+[node name="Wall11" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0.5, -4.37114e-08, 0, -2.18557e-08, -1, -1, -2.18557e-08, 1.91069e-15, 2.50666, 17.7156, 11.0108 )
+
+[node name="Wall14" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -1.74846e-08, 0.5, -4.37114e-08, 0, -2.18557e-08, -1, -0.4, -2.18557e-08, 1.91069e-15, 2.50666, 17.7156, -1.87873 )
+
+[node name="Wall15" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 1.09278e-08, 0.5, -1.50996e-07, 0.25, -2.18557e-08, 0, -1.65006e-15, -7.54979e-08, -1, 2.50666, 22.2463, 2.58279 )
+
+[node name="Wall16" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 1.09278e-08, 0.5, -1.05697e-07, 0.25, -2.18557e-08, 0, -1.65006e-15, -7.54979e-08, -0.7, 13.566, 22.2463, -0.373797 )
+
+[node name="Wall17" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -1.09278e-08, 0.5, -3.53119e-08, 0, -2.18557e-08, -0.807842, -0.25, -2.18557e-08, 1.54353e-15, 13.7344, 16.5376, 3.23016 )
+
+[node name="Wall18" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -1.09278e-08, 0.5, -3.53119e-08, 0, -2.18557e-08, -0.807842, -0.25, -2.18557e-08, 1.54353e-15, 13.7344, 16.5376, -3.08968 )
+
+[node name="Wall12" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -1.68857e-07, 0.5, -8.74228e-08, 0, -2.18557e-08, -2, -3.863, -2.18557e-08, 3.82137e-15, 33.5367, 11.6031, -4.61442 )
+
+[node name="Wall13" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( -1.68857e-07, 0.5, -8.74228e-08, 0, -2.18557e-08, -2, -3.863, -2.18557e-08, 3.82137e-15, -25.9335, 11.6031, -4.61442 )
+
+[node name="Wall8" parent="Walls" instance=ExtResource( 3 )]
+transform = Transform( 1.6344, 0, 0, 0, -2.18557e-08, -1, 0, 0.5, -4.37114e-08, 22.9368, 17.7033, 4.40714 )
 
 [node name="Stairs_Gray" parent="Walls" instance=ExtResource( 4 )]
 transform = Transform( 3.57746e-08, 0, -3, 0, 3, 0, 3, 0, 3.57746e-08, 14.7283, -0.391325, -23.6589 )
