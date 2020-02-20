@@ -7,7 +7,6 @@ radius = 0.6
 height = 2.0
 
 [node name="Gary" type="KinematicBody"]
-editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.52113, 0.98772 )
 script = ExtResource( 1 )
 
@@ -38,6 +37,9 @@ visible = false
 margin_right = 1050.0
 margin_bottom = 629.0
 color = Color( 0, 0, 1, 0.470588 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="Head/Camera"]
+transform = Transform( 1, 0, 0, 0, 0.717579, 0.696477, 0, -0.696477, 0.717579, 0, 0, 0 )
 
 [node name="Tail" type="RayCast" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.49056, 0 )
