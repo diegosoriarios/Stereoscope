@@ -43,7 +43,6 @@ func _physics_process(delta):
 	else:
 		walk(delta)
 		
-	print(global.level_color)
 	if global.level_color == 0:
 		$Head/Camera/Red.visible = false
 		$Head/Camera/Green.visible = false
